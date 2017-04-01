@@ -11,6 +11,7 @@
     "test": "npm run unit"
   },
   "dependencies": {
+    "echarts": "^3.5.1",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
     "webpack-visualizer-plugin": "^0.1.11"
