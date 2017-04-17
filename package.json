@@ -7,14 +7,14 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "build_dll": "./node_modules/.bin/webpack --config ./build/webpack.dll.config.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit"
   },
   "dependencies": {
     "echarts": "^3.5.1",
     "vue": "^2.2.2",
-    "vue-router": "^2.2.0",
-    "webpack-visualizer-plugin": "^0.1.11"
+    "vue-router": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -66,7 +66,8 @@
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.16.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-merge": "^2.6.1",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "engines": {
     "node": ">= 4.0.0",

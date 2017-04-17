@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+var echarts = require('echarts');
+console.log("dll's echarts:", echarts);
 
 /* eslint-disable no-new */
 new Vue({

@@ -49,6 +49,10 @@ var webpackConfig = merge(baseWebpackConfig, {
         safe: true
       }
     }),
+    new webpack.DllReferencePlugin({
+       context: path.join(__dirname, '../'),
+       manifest: require('../dist/dll_vendor-363ea67cc5b544a3610f-manifest.json')
+    }),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
